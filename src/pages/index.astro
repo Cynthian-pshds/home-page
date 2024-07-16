@@ -7,22 +7,23 @@ import Card from '../components/Card.astro';
 	<main>
 
 		<h1>你是<span class="text-gradient">谁？</span></h1>
+		
 		<p class="instructions">
-
-			&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;
 			由于我的个人网站内容无法做到普及全部人群，
 			<strong>请选择您的角色</strong>以查看对应内容。
+			以下语句使用的
+			"&thinsp;/&thinsp;"&thinsp;符号表示&thinsp;“或”&thinsp;的关系。
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				title="学术界 | Academic"
+				body="&#8195;&#8195;专科生 / 本科生 / 硕士生 / 博士生 / 高校教师 / 研究员"
 			/>
 			<Card
 				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				title="基础教育 | Basic Education"
+				body="&#8195;&#8195;小学生 / 初中生 / 普高生 / 中小学教师 / 中小学生或幼儿家长"
 			/>
 			<Card
 				href="https://astro.build/themes/"
@@ -35,6 +36,14 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+
+		<br><br><br>
+
+		<h5>
+			&#8195;&#8195;I Regret to Inform You That An <span class="text-gradient">English Version</span>
+			of This Website Is <span class="text-gradient">NOT Provided.</span>
+			<br>
+		</h5>
 	</main>
 </Layout>
 
@@ -67,23 +76,24 @@ import Card from '../components/Card.astro';
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
-		-webkit-text-fill-color: #951c48;
+		-webkit-text-fill-color: #480c22;
 		background-size: 400%;
 		background-position: 0%;
 	}
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		color: #5e616d;
+		color: #21373d;
 		background: #c7d2d4;
 		padding: 1.5rem;
 		border-radius: 8px;
+		text-indent: 2em;
 	}
 	.instructions code {
 		font-size: 0.8em;
 		font-weight: bold;
 		background: #c7d2d4;
-		color: #5e616d;
+		color: #21373d;
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
 	}
