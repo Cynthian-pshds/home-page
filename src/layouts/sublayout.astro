@@ -2,11 +2,10 @@
 import Layout from './Layout.astro';
 import '../styles/global.css';
 const {frontmatter} = Astro.props;
-import remarkToc from 'remark-toc';
 ---
 
-<Layout title="网站分区：学术界">
+<Layout title={Astro.props.title}>
+
     <slot/>
-        <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.4/tocbot.min.js"></script>
     
 </Layout>

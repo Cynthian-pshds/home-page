@@ -10,5 +10,3 @@ export default defineConfig({
 });
 
 
-
-// Use the Rehype TOC plugin with its default options
