@@ -3,7 +3,9 @@ layout: "../layouts/sublayout.astro"
 title: "恢复通讯"
 ---
 
-# 请发邮件到以下地址——
+# 恢复通讯
+
+## 请发邮件到以下地址——
 
 # roffi.peng@foxmail.com
 
