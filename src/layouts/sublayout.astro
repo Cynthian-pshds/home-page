@@ -1,13 +1,49 @@
 ---
-import Layout from './Layout.astro';
 import '../styles/global.css';
-const { title } = Astro.props;
+const {frontmatter} = Astro.props;
 ---
 
-<Layout title={title}>
-    <head>
-        <title>{title}</title>
-    </head>
-    <slot/>
-    
-</Layout>
+<!doctype html>
+<html lang="zh">
+	<head>
+		<title>{frontmatter.title}</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: #2983bb; /* 主色调 */
+		--accent-light: #8dcbe6; /* 浅色调 */
+		--accent-dark: #005e93; /* 深色调 */
+		--accent-gradient: linear-gradient(
+			45deg,
+			var(--accent),
+			var(--accent-light),
+			var(--accent-dark)
+		);
+	}
+
+	html {
+		font-family: system-ui, sans-serif;
+		background: #f1f0ed;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>
