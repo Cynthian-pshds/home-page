@@ -7,7 +7,7 @@ title: "恢复通讯"
 
 ## 请发邮件到以下地址——
 
-# roffi.peng@foxmail.com
+roffi.peng@foxmail.com
 
 请在来稿中告诉我，我是在:
 
