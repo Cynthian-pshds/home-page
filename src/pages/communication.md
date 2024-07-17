@@ -1,6 +1,6 @@
 ---
-layout: "../layouts/sublayout.astro"
-title: "恢复通讯"
+layout: ../layouts/sublayout.astro
+title: 恢复通讯
 ---
 
 # 如需恢复通讯
@@ -19,7 +19,9 @@ roffi.peng@foxmail.com
 
 唯一目标是让我想起确实有这么个人。
 
-如有必要，可说明可由什么人作证明。我会去询问证明人。
+如有必要，可说明可由什么人作证明。
+
+我会去询问证明人。
 
 ### 此邮箱可以保证是长期有效的，不随毕业、入学、换单位、域名到期等事项而改变。
 
