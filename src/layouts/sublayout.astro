@@ -1,8 +1,13 @@
 ---
 import Layout from './Layout.astro';
 import '../styles/global.css';
+const {frontmatter} = Astro.props;
+import remarkToc from 'remark-toc';
 ---
 
 <Layout title="网站分区：学术界">
+    <script type="module">
+
+      </script>
     <slot/>
 </Layout>
