@@ -3,7 +3,7 @@ layout: "../layouts/sublayout.astro"
 title: "恢复通讯"
 ---
 
-# 恢复通讯
+# 如需恢复通讯
 
 ## 请发邮件到以下地址——
 
