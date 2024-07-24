@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Newcard from '../components/new-card.astro';
 ---
 
 <Layout title="个人主页 | Peng Xianzhe">
@@ -16,7 +17,7 @@ import Card from '../components/Card.astro';
 			"&"&thinsp;符号都表示&thinsp;“或”&thinsp;的关系。
 		</p>
 		<ul role="list" class="link-card-grid">
-			<Card
+			<Newcard
 				href="https://academic.pengxianzhe.org/"
 				title="高校院所 | Academic"
 				body="&#8195;&#8195;专科生 / 本科生 / 高等学校教师 / 具备专业技术型职称 / 研究生"
@@ -24,11 +25,23 @@ import Card from '../components/Card.astro';
 
 			<Card
 				href="https://astro.build/chat/"
-				title="工作应用 | Professional"
+				title="生产制造 | Production"
 				body="&#8195;&#8195;如果你想看某些实际操作的经验 / 想了解我听说的行业动向 "
 			/>
 
 			<Card
+				href="https://astro.build/chat/"
+				title="公共计划 | Public Design"
+				body="&#8195;&#8195;社会主义市场经济公共计划及治理工作实务 "
+			/>
+
+			<Card
+				href="https://astro.build/chat/"
+				title="商业活动 | Commercial Business"
+				body="&#8195;&#8195;债务流通 / 公司金融 / 市场营销 / 原材料证券"
+			/>
+
+			<Newcard
 				href="https://astro.build/integrations/"
 				title="基础教育 | Basic Education"
 				body="&#8195;&#8195;初中生 / 普高生 / 中小学生家长 / 中小学教师 / 小学生 / 幼儿抚养人"
@@ -37,7 +50,7 @@ import Card from '../components/Card.astro';
 			<Card
 				href="https://astro.build/integrations/"
 				title="文化艺术 | Culture & Arts"
-				body="&#8195;&#8195;饮食 & 音乐 & 绘画 & 文学"
+				body="&#8195;&#8195;古代经典文本 & 饮食 & 音乐 & 绘画 & 文学 | 源流和变迁"
 			/>
 
 			<Card
@@ -135,27 +148,32 @@ import Card from '../components/Card.astro';
 		height: auto;
 		z-index: -1;
 	}
+
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+		-webkit-background-clip: padding-box; /* 旧版Webkit浏览器前缀 */
+		background-clip: padding-box;
 	}
+
 	.text-gradient {
-		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: #621624; 
 		background-size: 400%;
 		background-position: 0%;
+		-webkit-background-clip: padding-box; /* 旧版Webkit浏览器前缀 */
+  		background-clip: padding-box;
 	}
 
 	
 	.instructions {
 		margin-bottom: 2rem;
-		border: 1px solid var(--accent-light), 25%);
+		border: 0px;
 		color: #21373d;
-		background: #c7d2d4;
+		background: #e9d7df;
 		padding: 1.5rem;
 		border-radius: 8px;
 		text-indent: 2em;
