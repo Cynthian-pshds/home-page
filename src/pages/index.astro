@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Newcard from '../components/new-card.astro';
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="个人主页 | Peng Xianzhe">
@@ -67,67 +68,26 @@ import Newcard from '../components/new-card.astro';
 
 		</ul>
 
-		<h5>
-			<p>
-			&#8195;&#8195;I Regret to Inform You that an <span class="text-gradient">English Version</span>
-			of This Website Is <span class="text-gradient">NOT Provided.</span>
-			Perhaps you could use a translator offered by the browser.
-			</p>
 			<br>
-		</h5>
 
-			<style>
-				.grid-container {
-				display: grid;
-				grid-template-columns: auto auto;
-				grid-gap: 10px;
-				background-color: #f1f0ed;
-				padding: 10px;
-				}
-				
-				.grid-container > div {
-				background-color: #f1f0ed;
-				text-align: center;
-				padding: 20px 0;
-				font-size: 15px;
-				}
-			</style>
-
-			<div class="grid-container">
-
-				<div>
-		
-					亲情链接
-					<br>
-					<a href="http://www.mysng.com/history.php">绵阳市少年宫</a>
-					<a href="https://j.map.baidu.com/06/oJpi">幼儿园</a>
-					<br>
-					<a href="https://www.archdaily.cn/cn/1010983/shen-zhen-shi-di-er-you-er-yuan-xu-yun-chao-jian-zhu-gong-zuo-shi">深圳市第二幼儿园</a>
-					<br>
-					<a href="https://j.map.baidu.com/0e/fQC">绵阳市实验小学</a>
-					<br>
-					<a href="https://skc.ecnu.edu.cn/">华东师范大学社会科学</a>
-					<strong><span class="text-gradient">经济系</span></strong>
-		
-				</div><div>
-		
-					友情链接
-					<br>
-					<a href="https://weibo.com/u/5866398493">INXOR音乐创作社</a>
-					<br>
-					<a href="https://mp.weixin.qq.com/s/V2-pK3wAljQApCTy7HwJEg">四川自然学堂</a>
-					<br>
-					<a href="https://sem.ecnu.edu.cn/ltwjz/list.htm">华东师大经管学院</a>
-			
-				</div>
-			</div>
-		
+		<hr/>
 			<p>
-				<small>&#8195;&#8195;由于境内无厂商提供可自定义域名的托管站点免费服务，本站托管在境外服务器，境内网络浏览有可能出现不稳定、无图片、格式混乱等故障。</small>
+				<br>
+					<strong>
+						I Regret to Inform You that an
+						<span class="text-gradient">English Version</span>
+						of This Website Is
+						<span class="text-gradient">NOT Provided.</span>
+					</strong>
+					You may currently consider utilizing a browser-based translation tool for assistance.
 			</p>
-			
-	</main>
+				<br>
+			<hr/>
+		<Footer/>
+		
 </Layout>
+
+
 
 <style>
 	main {
@@ -139,6 +99,7 @@ import Newcard from '../components/new-card.astro';
 		font-size: 20px;
 		line-height: 1.6;
 	}
+
 	.astro-a {
 		position: absolute;
 		top: -32px;
