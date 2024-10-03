@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.1",
+    "@astrojs/check": "^0.9.3",
     "@jsdevtools/rehype-toc": "^3.0.2",
-    "astro": "^4.11.5",
+    "astro": "^4.15.10",
     "esm": "^3.2.25",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
