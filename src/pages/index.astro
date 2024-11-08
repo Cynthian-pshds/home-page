@@ -5,17 +5,13 @@ import Newcard from '../components/new-card.astro';
 import Footer from '../components/Footer.astro'
 ---
 
-<Layout title="个人主页 | Peng Xianzhe">
+<Layout title="个人主页">
 	<main>
 
 		<h1>&emsp;你是<span class="text-gradient">谁？</span></h1>
 		
 		<p class="instructions">
-			由于我的个人网站内容无法做到普及全部人群、照顾一切目的，
-			<strong>请选择您是什么角色</strong>或者想看什么内容。
-			以下语句使用的
-			"&nbsp;/&nbsp;"&thinsp;符号和
-			"&"&thinsp;符号都表示&thinsp;“或”&thinsp;的关系。
+			<strong>请选择</strong>您是什么角色或者想看什么内容。
 		</p>
 		<ul role="list" class="link-card-grid">
 
@@ -56,6 +52,12 @@ import Footer from '../components/Footer.astro'
 			/>
 
 			<Card
+				href="/404.html"
+				title="摄影作品 | Photography"
+				body="&emsp;&emsp;照片墙形式的单页面站点，暂未上线"
+			/>
+
+			<Card
 				href="https://general.pengxianzhe.org"
 				title="谝闲传 | Idle Talk"
 				body="&emsp;&emsp;不严谨不严肃的业余文稿 | 如果你想找点打发时间的阅读材料"
@@ -69,7 +71,7 @@ import Footer from '../components/Footer.astro'
 
 			<Card
 				href="https://commercial.pengxianzhe.org"
-				title="商业活动 | Commercial Business"
+				title="商业执行 | Commercial Business"
 				body="&emsp;&emsp;债务流通 / 公司金融 / 市场营销 / 原材料证券"
 			/>
 
